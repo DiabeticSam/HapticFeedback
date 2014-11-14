@@ -9,10 +9,14 @@ $(document).on("pagecreate","#pageone",function(){
 			if (result < 5)
 			{
 			alert("True");
+			//beep three time 
+			navigator.notification.beep(3);
 			}
 			else
 			{
 			alert ("False");
+			//vibrate for 2000 milliseconds 
+			navigator.notification.vibrate(2000);
 			}
 	 
 	});
